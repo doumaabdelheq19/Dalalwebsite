@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="details.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   
+    <style>
+.checked {
+  color: rgb(250, 202, 61);
+}
+</style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="containerkaka">
+            <div class="logo">
+                <a href="index (9).html"  href="#"><img src="jj-removebg-preview.png" alt="Logo"></a>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button type="submit"></button>
+            </div>
+        </div>
+    </nav> 
+<div class="container">
+    <div class="box">
+        <div class="image-box">
+          <img  class="product-img" src="IMG_8022.jpg" alt="">
+        </div>
+        <div class="basic-info">
+            <h1>vintage blue bag</h1>
+            <div class="rate">
+            <span class="fa fa-star checked"></span>
+           <span class="fa fa-star checked"></span>
+           <span class="fa fa-star checked"></span>
+           <span class="fa fa-star checked"></span>
+           <span class="fa fa-star"></span>
+         
+          <h2 style="color: rgb(56, 154, 56);">900da</h2>
+         <div class="options">
+         <a href="#">add to card</a>
+         </div>
+        </div>
+        <div class="description">
+            <h3>the product's information</h3>
+        <ul>
+            <li>country origin: canada.</li>
+            <li>size: 30/40.</li>
+            <li>color: blue.</li>
+            <li>fabric:leatger.</li>
+        </ul>
+        <div class="info">
+            <h2 style="color: orange;">seller's info/contact</h2>
+            <div class="boxy">
+                <div class="A">
+                <i class="material-icons">&#xe55f;</i>
+               <h4>place-region</h4>
+               </div>
+               <div class="B">
+                <i class="material-icons">&#xe551;</i>
+             <button class="call-button" data-phone-number="phone number">0549646181</button>
+             </div>
+             <div class="C">
+                <i class="material-icons">&#xe554;</i>
+                <button class="email-button" data-email="email">doudidalal6@gmail.com</button>
+             </div>
+            </div>
+            
+
+        </div>
+      </div>
+      </div> 
+    </div>
+    <script>
+        var callButtons = document.querySelectorAll('.call-button');
+        callButtons.forEach(function(button) {
+            button.addEventListener('click', function() {
+                var phoneNumber = button.textContent.trim().replace(/-/g, '');
+                window.location.href = 'tel:' + phoneNumber;
+            });
+            
+        });
+        var emailButtons = document.querySelectorAll('.email-button');
+        emailButtons.forEach(function(button) {
+        button.addEventListener('click', function() {
+            var emailAddress = button.dataset.email;
+            window.location.href = 'mailto:' + emailAddress;
+        });
+    });
+    </script>
+</body>
+</html>
+
+
+  
